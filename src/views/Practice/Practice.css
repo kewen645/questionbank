@@ -1,0 +1,35 @@
+.Practice {
+  width: 100%;
+  overflow: hidden;
+}
+.Practice .top {
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.Practice .top .MuiSvgIcon-root {
+  width: 50px;
+  height: 50px;
+  margin-right: 14px;
+}
+.Practice .top .top_index b {
+  font-weight: bold;
+  color: #2e57ff;
+}
+.Practice .question {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: left 0.5s linear;
+}
+.Practice .question li {
+  float: left;
+  width: 100vw;
+  padding: 60px 50px 0;
+  box-sizing: border-box;
+  background-color: pink;
+  height: 300px;
+}

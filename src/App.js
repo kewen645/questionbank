@@ -1,8 +1,15 @@
-import Button from '@mui/material/Button'
+import { Outlet } from 'react-router-dom'
+import Tabbar from '@/components/Tabbar'
+import './App.less'
 
 export default function App() {
   return (
-    <Button variant="contained" color="primary">你好，世界</Button>
+    <div className='app'>
+      <Outlet />
+      <Tabbar />
+    </div>
   )
 }
+
+
 

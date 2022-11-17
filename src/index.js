@@ -1,9 +1,13 @@
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
+import BaseRouter from './router'
+import { Provider } from 'react-redux'
+import store from './store'
 import 'reset-css'
-import App from './App'
+import 'lib-flexible'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-
-root.render(
-  <App />
+ReactDOM.render(
+  <Provider store={store}>
+    <BaseRouter />
+  </Provider>
+  , document.getElementById('root')
 )
