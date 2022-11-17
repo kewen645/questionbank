@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import App from "@/App"
 import Register from "@/views/Register/Register"
 import Login from "@/views/Login/Login"
@@ -13,6 +13,7 @@ const BaseRouter = () => {
     <Router>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/fast" element={<Fast />} />
           <Route path="/user" element={<User />} />
